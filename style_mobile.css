@@ -12,7 +12,7 @@ html{
 header{
     position: relative;
     width: 100%;
-    height: 155px;
+    height: 175px;
     box-shadow: 0 0 10px 1px #a5a5a5;
 
 }
@@ -22,6 +22,7 @@ header{
     flex-wrap: wrap;
     justify-content: center;
 }
+
 
 .nav-container .logo-header img{
     width: 300px;
@@ -36,30 +37,29 @@ header{
 
 .nav-rigth-section li{
     width: 82px;
-    height: 40px;
+    height: 60px;
     border-radius: 5px;
     font-size: 1.5rem;
     margin: 0 5px;
     box-shadow: 0 0 10px 1px #a5a5a5;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    padding: 10px;
   
+}
+
+i{
+    font-size: 3rem;
+    color: #0061e0;
 }
 
 .nav-container .nav-rigth-section a{
     text-decoration: none;
     color: #0061e0;
 }
-main{
-    width: 100%;
-    height: 85vh;
-    background-image: url(./fondo.jpg);
-    background-repeat: no-repeat;
-    background-position:left;
-    background-size:cover;
-    
-}
+
 
 main .main-text h1{
     width: 85%;
@@ -91,13 +91,60 @@ main .main-text .subtitle p{
     
 }
 
+main .boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main .box1, main .box2{
+    margin: 10px;
+    width: 250px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding: 20px;
+    
+}
+
+.boxes a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+main .box1{
+    background-color: rgba(114, 114, 114, .8) ;
+
+}
+
+main .box2{
+    background-color: rgba(0, 98, 226, 0.8)
+}
+
+
+main .boxes h2{
+    margin: 10px;
+    font-size: 2rem;
+}
+
+main .boxes p{
+    font-size: 1.4rem;
+}
+
+.boxes i{
+    font-size: 5rem;
+    color: white;
+}
+
+
 @media (min-width: 668px){
 .nav-container{
     justify-content: space-evenly;
 }
     
 .nav-container .nav-rigth-section{
-    margin-top: 50px;
+    margin-top: 35px;
 }
 
 header{
