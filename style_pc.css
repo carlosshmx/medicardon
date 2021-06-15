@@ -107,7 +107,8 @@ main .main-text .subtitle div{
 main .main-text .subtitle p{
     width: 75%;
     height: 50px;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
     font-weight: bold;
     display: flex;
     align-items: center;
