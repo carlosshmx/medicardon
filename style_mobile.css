@@ -116,13 +116,29 @@ main .main-text .subtitle p{
     width: 280px;
 }
 
-.sections_img_x2 a{
+.sections_img_x2 a ,.sections_img_x2 .info_doc{
     margin: 15px;
     text-decoration: none;
     font-size: 1.5rem;
     text-align: center;
     color: #0061e0;
 }
+
+.sections_img_x2 .info_doc h3{
+    text-align: left;
+}
+
+.sections_img_x2 .info_doc li{
+    text-align: left;
+    margin-left: 20px;
+}
+
+.sections_img_x2 .info_doc p{
+    font-size: 1.8rem;
+}
+
+
+
 
 .sections_img_x2 a:hover{
     color:#494949;
