@@ -12,7 +12,7 @@ html{
 
 header{
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: 175px;
     box-shadow: 0 0 10px 1px #a5a5a5;
 
@@ -43,13 +43,13 @@ header{
     border-radius: 5px;
     font-size: 1.5rem;
     margin: 0 5px;
-    box-shadow: 0 0 10px 1px #a5a5a5;
+    /* box-shadow: 0 0 10px 1px #a5a5a5; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding: 8px;
-    margin-top: 10px;
+   
 
   
 }
@@ -204,6 +204,27 @@ main .boxes p{
     color: white;
 }
 
+
+
+.map{
+    text-align: center;  
+    margin: 15px;
+}
+
+.map iframe{
+    margin-top: 10px;
+    width: 320px;
+    height: 320px;
+}
+
+.map h2{
+    font-size: 2rem;
+    color: #0061e0;
+    font-weight: 600;
+}
+
+
+
 footer{
     display: flex;
     justify-content: space-evenly;
@@ -238,19 +259,27 @@ footer .left_footer li i{
     color: #9db4ff;
 }
 
+footer .rigth_footer{
+    color: #ffffff;
+    text-align: center;
+}
+
+footer .rigth_footer p{
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
 footer .rigth_footer h3{
     font-size: 1.8rem;
     font-weight: 300;
-    color: #ffffff;
 }
 
 
-footer .rigth_footer i{
-    display: flex;
-    justify-content: center;
-    color: #ffffff;
-    font-size: 5rem;
+footer .rigth_footer img{
+    width: 80px;
 }
+
+
 
 
 @media (min-width: 620px){
@@ -273,6 +302,12 @@ main .main-text h1{
 }
 main .main-text .subtitle p{
     font-size: 2rem;
+}
+
+.map iframe{
+    margin-top: 10px;
+    width: 600px;
+    height: 450px;
 }
 
 
