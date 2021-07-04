@@ -7,6 +7,11 @@
 html{
     font-size: 62.5%;
     font-family: 'Prompt', sans-serif;
+    position: relative;
+}
+
+body{
+    
 }
 
 
@@ -28,7 +33,7 @@ header{
 
 .nav-container .logo-header img{
     width: 345px;
-    margin-top: 15px;
+    margin-top: 25px;
 }
 
 .nav-container .nav-rigth-section{
@@ -67,8 +72,9 @@ i{
 }
 
 main{
-    /* padding-top: 150px; */
+    min-height: 80vh;
 }
+
 
 
 main .main-text h1{
@@ -209,6 +215,19 @@ main .boxes p{
     color: white;
 }
 
+main .estetica_logo{
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
+
+}
+
+main .estetica_logo img{
+    padding: 10px;
+    width: 100%;
+    max-width: 500px;
+}
+
 
 
 .map{
@@ -231,13 +250,14 @@ main .boxes p{
 
 
 footer{
+    
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
     background-color: #0061e0;
     padding-top: 10px;
-    bottom: 0;
 }
 
 footer .left_footer, footer .rigth_footer{
@@ -287,7 +307,7 @@ footer .rigth_footer img{
 
 
 
-@media (min-width: 620px){
+@media (min-width: 682px){
 .nav-container{
     justify-content: space-evenly;
 }
