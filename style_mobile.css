@@ -295,6 +295,44 @@ main .implantes-container .implante-item picture img {
   border-radius: 10px;
 }
 
+main .contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .contact-container .conctac-item {
+  width: 300px;
+  margin: 20px 30px;
+}
+
+main .contact-container .conctac-item ul {
+  list-style: none;
+  font-size: 1.6rem;
+}
+
+main .contact-container .conctac-item ul li {
+  margin: 10px 0;
+}
+
+main .contact-container .conctac-item ul li i {
+  font-size: 2rem;
+}
+
+main .contact-container .conctac-item iframe {
+  width: 300px;
+  height: 300px;
+}
+
+main .contact-container .map2 {
+  text-align: center;
+}
+
 .map iframe {
   margin-top: 10px;
   width: 320px;

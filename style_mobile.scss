@@ -259,6 +259,36 @@ main{
         
         }
     }
+    .contact-container{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+        .conctac-item{
+            width: 300px;
+            margin: 20px 30px;
+            ul{
+                list-style: none;
+                font-size: 1.6rem;
+                li{
+                    margin: 10px 0;
+                    i{
+                        font-size: 2rem;
+                    }
+                }
+                
+            }
+            iframe{
+                width: 300px;
+                height: 300px;
+            }
+            
+        }
+        .map2{
+            text-align: center;
+        }
+        
+    }
 
 }
 
