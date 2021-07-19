@@ -1,6 +1,7 @@
 $blue:#0042ad;
 $ligth-blue: #9db4ff;
 $gray : #6b6c6e;
+$ligth-gray: rgb(211, 211, 211);
 
 *{
     box-sizing: border-box;
@@ -126,14 +127,19 @@ main{
 
             img{
                 width: 280px;
+                box-shadow: 0px 0px 16px $ligth-gray;
+                border-radius: 10px;
             }
 
             a{
                 margin: 15px;
                 text-decoration: none;
-                
                 text-align: center;
                 color: $blue;
+                // background-color: rgb(247, 247, 247);
+                border-radius: 20px;
+                width: 340px;
+                padding: 10px;
             }
 
             .info_doc{
@@ -237,9 +243,18 @@ main{
         justify-content: center;
         text-align: center;
         .implante-item{
+            background-color: rgb(247, 247, 247);
+            border-radius: 20px;
+            width: 94%;
+            margin: 10px;
+            padding: 10px;
+            color: $blue;
             picture img{
                 width: 90%;
                 height: auto;
+                box-shadow: 0px 0px 10px $ligth-gray;
+                margin-bottom: 4px;
+                border-radius: 10px;
             }
         
         }
