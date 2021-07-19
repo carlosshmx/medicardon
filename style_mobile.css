@@ -82,6 +82,11 @@ main {
   min-height: 80vh;
 }
 
+main h3 {
+  font-weight: 400;
+  font-size: 1.7rem;
+}
+
 main .main-text h1 {
   width: 100%;
   height: 50px;
@@ -100,28 +105,17 @@ main .main-text h1 {
   color: white;
   margin-top: 5px;
   background: rgba(0, 98, 226, 0.6);
-  margin-bottom: 8px;
 }
 
 main .main-text .subtitle p {
   width: 100%;
-  height: 50px;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   line-height: 2rem;
   font-weight: 300;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   text-align: center;
   padding: 20px;
   color: #6b6c6e;
-  margin-bottom: 20px;
+  margin: 0 auto;
 }
 
 main .sections_img_container {
@@ -152,10 +146,6 @@ main .sections_img_container .sections_img_x2 a:hover {
   transition: 500ms;
 }
 
-main .sections_img_container .sections_img_x2 h3 {
-  font-weight: 400;
-}
-
 main .sections_img_container .sections_img_x2 img {
   width: 280px;
 }
@@ -163,7 +153,6 @@ main .sections_img_container .sections_img_x2 img {
 main .sections_img_container .sections_img_x2 a {
   margin: 15px;
   text-decoration: none;
-  font-size: 1.5rem;
   text-align: center;
   color: #0042ad;
 }
@@ -270,6 +259,23 @@ main .map {
   margin: 15px;
 }
 
+main .implantes-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+main .implantes-container .implante-item picture img {
+  width: 90%;
+  height: auto;
+}
+
 .map iframe {
   margin-top: 10px;
   width: 320px;
@@ -349,6 +355,28 @@ footer .left_footer li i {
 @media (min-width: 682px) {
   main {
     padding-top: 100px;
+  }
+  main .main-text .subtitle p {
+    width: 80%;
+  }
+  main .implantes-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  main .implantes-container .implante-item {
+    width: 45%;
+    color: #0042ad;
+  }
+  main .implantes-container .implante-item picture img {
+    width: 60%;
+    height: auto;
   }
   .nav-container {
     -webkit-box-pack: space-evenly;
