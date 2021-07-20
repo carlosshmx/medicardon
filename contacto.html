@@ -24,7 +24,7 @@
             <ul class="nav-rigth-section">
                 <li><a href="./index.html"><i class="fas fa-home"></i>Home</a></li>
                 <li><a href=""><i class="fas fa-hands-helping"></i>Servicios</a></li>
-                <li><a href=""><i class="fas fa-user-md"></i>Doctores</a></li>
+                <li><a href="./consultas.html"><i class="fas fa-user-md"></i>Doctores</a></li>
                 <li><a href="./contacto.html"><i class="far fa-address-book"></i>Contacto</a></li>
             </ul>
         </nav>
@@ -38,23 +38,35 @@
                 <div></div>
              </div>
         </div>
-
         <section class="contact-container">
-            <section class="conctac-item">
+            <form id="my-form" action="https://formspree.io/f/mleawalj" method="POST">
+                <input type="text" name="Nombre" placeholder="Nombre y Apellido" required/>
+                <input type="email" name="Email" placeholder="E-Mail" required/>
+                <!-- <input type="text" name="message" placeholder="Mensaje" class= required/> -->
+                <textarea name="Mensaje" id="message-box" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                <button id="my-form-button">Enviar</button>
+                <p id="my-form-status"></p>
+            </form>
+
+            <section class="conctact-item">
                 <ul>
-                    <li><i class="fab fa-whatsapp"></i> +58 412 680 0717 / +58 269 4161537</li>
-                    <li><i class="fab fa-instagram"></i></i> @medicardonca</li>
-                    <li><i class="far fa-envelope"></i> medicardonca@gmail.com</li>
-                    <li><i class="far fa-clock"></i> Lunes a Viernes de 8:00am a 12:00pm<br>y 2:00pm a 6:00pm</li>
-                    <li><i class="fas fa-map-marker-alt"></i>Callejon Comercio, entre Av. Jacinto Lara<br>y Jofre Paul, 
-                    Edificio Medicardon C.A.</li>
+                    <a href="https://api.whatsapp.com/send?phone=584148104271"><li><i class="fab fa-whatsapp"></i> +58 414 810 4271</li></a>
+                    <a href="https://www.instagram.com/medicardonca/"><li><i class="fab fa-instagram"></i></i> medicardonca</li></a>
+                    <a href="mailto:medicardonca@gmail.com"><li><i class="far fa-envelope"></i> medicardonca@gmail.com</li></a>
+                    <li><i class="far fa-clock"></i> Lun - Vie 8:00am a 6:00pm</li>
+                    <li class="addres-info"><i class="fas fa-map-marker-alt"></i> Callejon Comercio, entre Av. Jacinto Lara y Jofre Paul. 
+                    <br> Edificio Medicardon C.A.</li>
                 </ul>
              </section>
-
-            <section class="map2 conctac-item">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3906.9937445703895!2d-70.20069638519081!3d11.694855191702327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e85edd51e9ed9cd%3A0xf8ce619bc9838283!2sMedicardon%20C.A.!5e0!3m2!1ses!2suy!4v1623903344333!5m2!1ses!2suy"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </section>
         </section>
+
+        
+
+
+        <section class="map2">
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3906.9937445703895!2d-70.20069638519081!3d11.694855191702327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e85edd51e9ed9cd%3A0xf8ce619bc9838283!2sMedicardon%20C.A.!5e0!3m2!1ses!2suy!4v1623903344333!5m2!1ses!2suy"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+
 
         
     
@@ -78,5 +90,34 @@
             <p>RIF J-31728068-7</p>
         </div>
     </footer>
+
+    
+      
+    
+      
+      <script>
+          var form = document.getElementById("my-form");
+          
+          async function handleSubmit(event) {
+            event.preventDefault();
+            var status = document.getElementById("my-form-status");
+            var data = new FormData(event.target);
+            fetch(event.target.action, {
+              method: form.method,
+              body: data,
+              headers: {
+                  'Accept': 'application/json'
+              }
+            }).then(response => {
+              alert("Mensaje enviado, pronto nos contactaremos contigo");
+              form.reset()
+            }).catch(error => {
+              alert("Tu mensaje no pudo ser enviado, por favor contactanos via e-mail o WhatsApp")
+            });
+          }
+          form.addEventListener("submit", handleSubmit)
+      </script>
+
+
 </body>
 </html>

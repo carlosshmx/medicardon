@@ -28,7 +28,7 @@ header{
     .nav-container{
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-evenly;
 
         .logo-header img{
             width: 345px;
@@ -51,7 +51,19 @@ header{
                 justify-content: center;
                 align-items: center;
                 padding: 8px;
-               
+                
+                details{
+                    ul{
+                        
+                        li{
+                            width: 130px;
+                            background-color: $gray;
+                            font-size: 1.7rem;
+                        }
+                        
+                    }
+                    
+                }
             
               
             }
@@ -118,11 +130,7 @@ main{
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-
-            a:hover{
-                color:$gray;
-                transition: 500ms;
-            }
+            align-items: center;
        
 
             img{
@@ -136,7 +144,6 @@ main{
                 text-decoration: none;
                 text-align: center;
                 color: $blue;
-                // background-color: rgb(247, 247, 247);
                 border-radius: 20px;
                 width: 340px;
                 padding: 10px;
@@ -151,6 +158,7 @@ main{
 
                 h2{
                     color: $gray;
+                    
                 }
 
                 h3{
@@ -162,6 +170,22 @@ main{
                 li{
                     text-align: left;
                     margin-left: 20px;
+                }
+                .contact-container{
+                    .conctact-item{
+                        margin-top: 16px;
+                    }
+                   
+                    ul{
+                        li{
+                            margin-left: 0;
+                        }
+                    }
+                    a{
+                        margin: 0;
+                        padding: 0;
+                    }
+
                 }
                 
                 
@@ -259,43 +283,112 @@ main{
         
         }
     }
+    
     .contact-container{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        margin-bottom: 14px;
         
-        .conctac-item{
+        #my-form{
             width: 300px;
-            margin: 20px 30px;
+            display: flex;
+            flex-direction: column;
+            margin: 30px 20px 0 20px;
+
+            
+            input{
+                width: 300px;
+                height: 30px;
+                margin-bottom: 8px;
+                border-radius: 10px;
+                padding: 0 10px;
+                outline: none;
+                border: 1px solid $gray;
+                
+            }
+            #message-box{
+                height: 160px;
+                padding: 10px 10px;
+                resize: none;
+                margin-bottom: 8px;
+                border-radius: 10px;
+                outline: none;
+                border: 1px solid $gray;
+                font-family: 'Prompt', sans-serif;
+            }
+            button{
+                width: 100px;
+                height: 30px;
+                margin: 0 auto;
+                border: none;
+                background-color: $blue;
+                box-shadow: 0px 0px 10px $ligth-gray;
+                font-weight: bold;
+                color: white;
+                border-radius: 6px;
+    
+            }
+    
+        }
+        
+        .conctact-item{
+            width: 320px;
+            margin: 20px 20px;
+            
+    
             ul{
                 list-style: none;
                 font-size: 1.6rem;
+                
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
+
                 li{
+                    padding: 0 14px;
+                    height: 40px;
                     margin: 10px 0;
+                    font-size: 1.6rem;
+                    display: flex;
+                    align-items: center;
+                    background-color: $ligth-gray;
+                    border-radius: 10px;
                     i{
-                        font-size: 2rem;
+                        font-size: 3rem;
+                        margin-right: 10px;
                     }
+                
+                }
+                li:hover{
+                    background-color: $ligth-blue;
+                    transition: 500ms;
+                }
+                .addres-info{
+                    height: 80px;
                 }
                 
             }
-            iframe{
-                width: 300px;
-                height: 300px;
-            }
-            
+         
         }
-        .map2{
-            text-align: center;
+      
+    } 
+    .map2{
+        text-align: center;
+        margin-bottom: 20px;
+        iframe{
+            width: 97%;
+            max-width: 800px;
+            height: 340px;
         }
-        
     }
-
 }
 
 
 .map iframe{
     margin-top: 10px;
-    width: 320px;
+    width: 96%;
     height: 320px;
 }
 
