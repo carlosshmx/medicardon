@@ -33,7 +33,7 @@ header .nav-container {
 
 header .nav-container .logo-header img {
   width: 345px;
-  margin-top: 25px;
+  margin-top: 18px;
 }
 
 header .nav-container .nav-rigth-section {
@@ -118,7 +118,7 @@ main .main-text .subtitle p {
   font-size: 1.8rem;
   line-height: 2rem;
   font-weight: 300;
-  text-align: center;
+  text-align: justify;
   padding: 20px;
   color: #6b6c6e;
   margin: 0 auto;
@@ -401,7 +401,7 @@ main .contact-container .conctact-item ul li {
 
 main .contact-container .conctact-item ul li i {
   font-size: 3rem;
-  margin-right: 10px;
+  margin-right: 12px;
 }
 
 main .contact-container .conctact-item ul li:hover {
@@ -411,7 +411,7 @@ main .contact-container .conctact-item ul li:hover {
 }
 
 main .contact-container .conctact-item ul .addres-info {
-  height: 80px;
+  height: 85px;
 }
 
 main .map2 {
@@ -437,7 +437,24 @@ main .map2 iframe {
   font-weight: 600;
 }
 
-footer {
+footer .infoDev_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 25px;
+  background-color: #0042ad;
+}
+
+footer .infoDev_container p {
+  font-size: 1.4rem;
+  color: #9db4ff;
+}
+
+footer .footer_container {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -454,37 +471,37 @@ footer {
   padding-top: 10px;
 }
 
-footer .rigth_footer {
+footer .footer_container .rigth_footer {
   margin: 15px 0;
   color: white;
   text-align: center;
 }
 
-footer .rigth_footer h3 {
+footer .footer_container .rigth_footer h3 {
   font-size: 1.8rem;
   font-weight: 300;
 }
 
-footer .rigth_footer p {
+footer .footer_container .rigth_footer p {
   font-size: 1.2rem;
   font-weight: 300;
 }
 
-footer .rigth_footer img {
+footer .footer_container .rigth_footer img {
   width: 80px;
 }
 
-footer .left_footer {
+footer .footer_container .left_footer {
   margin: 15px 0;
 }
 
-footer .left_footer ul {
+footer .footer_container .left_footer ul {
   list-style: none;
   font-size: 1.4rem;
   font-weight: 300;
 }
 
-footer .left_footer li {
+footer .footer_container .left_footer li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -496,7 +513,7 @@ footer .left_footer li {
   font-weight: 400;
 }
 
-footer .left_footer li i {
+footer .footer_container .left_footer li i {
   margin-right: 10px;
   color: #9db4ff;
 }
